@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Customer Support Bot",
+    "scenario": "Handles customer queries and support tickets",
+    "metadata": "Customer service automation",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Sales Assistant Bot",
+    "scenario": "Helps with sales inquiries and product recommendations",
+    "metadata": "Sales automation",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "HR Bot",
+    "scenario": "Provides HR assistance and employee support",
+    "metadata": "Human resources automation",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Technical Support Bot",
+    "scenario": "Assists with technical troubleshooting",
+    "metadata": "Technical support automation",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Marketing Bot",
+    "scenario": "Supports marketing campaigns and lead generation",
+    "metadata": "Marketing automation",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Finance Bot",
+    "scenario": "Handles financial queries and reporting",
+    "metadata": "Finance automation",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop"
+  }
+]

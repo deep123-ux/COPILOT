@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="chat-page">
+
+<div class="chat-container">
+    <div class="chat-header">
+        <div class="bot-info">
+            <img id="botAvatar" src="" alt="Bot Avatar">
+            <div>
+                <h1 id="botTitle"></h1>
+                <p id="botScenario"></p>
+            </div>
+        </div>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </div>
+
+    <div id="chatBox" class="chat-messages"></div>
+
+    <div class="chat-input-container">
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="input-group">
+            <input id="userMessage" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()" class="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="js/gemini.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>

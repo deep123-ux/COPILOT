@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Scenario Copilot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <i class="fas fa-robot"></i>
+                    AI Scenario Copilot
+                </h1>
+                <p class="hero-subtitle">Create intelligent AI assistants tailored to your specific scenarios and needs</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Possibilities</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">AI</span>
+                        <span class="stat-label">Powered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <!-- Create Bot Section -->
+        <section class="create-section">
+            <div class="container">
+                <div class="create-card">
+                    <div class="create-header">
+                        <h2><i class="fas fa-plus-circle"></i> Create New AI Assistant</h2>
+                        <p>Design your perfect AI companion for any scenario</p>
+                    </div>
+
+                    <div class="create-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="botName">
+                                    <i class="fas fa-user-robot"></i>
+                                    Assistant Name
+                                </label>
+                                <input type="text" id="botName" placeholder="e.g., Travel Buddy, Fitness Coach" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scenario">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    Scenario
+                                </label>
+                                <input type="text" id="scenario" placeholder="e.g., travel planning, fitness training" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="metadata">
+                                    <i class="fas fa-info-circle"></i>
+                                    Description
+                                </label>
+                                <textarea id="metadata" placeholder="Describe what this AI assistant will help you with..." rows="3" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="imageUrl">
+                                    <i class="fas fa-image"></i>
+                                    Custom Image URL (Optional)
+                                </label>
+                                <input type="url" id="imageUrl" placeholder="https://example.com/image.jpg">
+                            </div>
+                        </div>
+
+                        <div class="preview-section">
+                            <div class="preview-header">
+                                <h3><i class="fas fa-eye"></i> Live Preview</h3>
+                                <span class="preview-note">Image updates automatically based on your scenario</span>
+                            </div>
+                            <div class="preview-container">
+                                <div class="preview-card">
+                                    <div class="preview-image-container">
+                                        <img id="previewImage" src="images/default.png" alt="Bot Preview">
+                                        <div class="preview-overlay">
+                                            <span class="preview-text">Preview</span>
+                                        </div>
+                                    </div>
+                                    <div class="preview-info">
+                                        <h4 id="previewName">Your Assistant Name</h4>
+                                        <p id="previewScenario">Your scenario description will appear here</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="create-btn" onclick="createBot()">
+                                <i class="fas fa-magic"></i>
+                                Create AI Assistant
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Your Bots Section -->
+        <section class="bots-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-robot"></i> Your AI Assistants</h2>
+                    <p>Manage and interact with your created AI companions</p>
+                </div>
+
+                <div id="botContainer" class="bots-grid">
+                    <!-- Bots will be loaded here -->
+                </div>
+
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>No AI Assistants Yet</h3>
+                    <p>Create your first AI assistant to get started with personalized AI conversations</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Scenario Copilot. Powered by advanced AI technology.</p>
+        </div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
