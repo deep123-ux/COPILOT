@@ -37,7 +37,7 @@ scenario-copilot
 │   └── gemini.js
 │
 └── images
-```
+
 
 ## 🚀 How to Run
 
@@ -45,9 +45,7 @@ scenario-copilot
 2. Open the project folder
 3. Open `index.html` in your browser
 
-## 📸 Screenshots
 
-(Add screenshots of your UI here)
 
 ## 👩‍💻 Author
 
