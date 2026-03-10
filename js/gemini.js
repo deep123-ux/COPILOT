@@ -1,4 +1,4 @@
-const API_KEY = "";
+const API_KEY = "AIzaSyDOrIcXG20C3kOmp4FAdgLqEAseEUz_l1k";
 
 async function askGemini(scenario, metadata, message){
 
